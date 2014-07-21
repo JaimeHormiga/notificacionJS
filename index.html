@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="description" content="Demo de uso de la clase Notificacion">
+    <meta name="author" content="Jaime Hormiga">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Notificaciones</title>
+
+    <script src='js/jquery.js'></script>
+    <script src='js/notificacion.js'></script>
+    <script>
+        window.onload = function(){
+            var noti= new Notificacion("prueba de notificacion",2);
+            $("#boton").on({
+                click: function(e){
+                 noti.mostrar();
+                }
+            });
+
+            $("#boton2").on({
+                click: function(e){
+                noti.mover(['med','cen']);
+                noti.mostrar(false);
+                }
+            }
+            );
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <input type='button' id='boton' value='Demo'>
+    <input type='button' id='boton2' value='Mover'>
+
+</body>
+</html>
