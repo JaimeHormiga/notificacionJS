@@ -5,6 +5,7 @@ Autor: Jaime Hormiga
 
  @param:
     - mensaje: texto que va a mostrar la notificacion
+
     - tipo : tipo de notificacion
         .1-normal
         .2-con imagen
