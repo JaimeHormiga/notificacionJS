@@ -3,7 +3,8 @@ Clase NotificacionJS
 ver. Beta 1.140720
 Autor: Jaime Hormiga
 
- @param:
+ @params:
+
     - mensaje: texto que va a mostrar la notificacion
 
     - tipo : tipo de notificacion
